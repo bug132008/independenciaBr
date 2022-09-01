@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-	return render_template('index.html')
+	return render_template('home/index.html')
 @app.route('/<any>')
 def ani(any):
 	return f"A página {any} não foi encontrada"
